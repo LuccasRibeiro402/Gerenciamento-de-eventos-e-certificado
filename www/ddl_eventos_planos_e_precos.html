@@ -1,0 +1,174 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <link rel="stylesheet" href="components/loader.css">
+    <script src="components/loader.js"></script>
+    <script>
+      
+    </script>
+</head>
+<body>
+    <style>
+			*{margin: 0%;}
+
+		<body>
+			<style>
+			*{margin: 0%;}
+						.menu{
+				color:white;
+				background-color:white;
+				height:10vh; 
+				left:20vh;
+			}
+			
+
+
+
+			.conteudo{
+				color:black;
+				background-color:white;
+				height:80vh;
+			}
+			
+			.rodape{
+			
+				color:white;
+				background-color:darkorange;
+				height:20vh; }
+	
+.form-control {
+font-size: 0.8rem;
+}
+		</style>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-2 menu"></div>
+				<div class="col-1 menu"><a href="ddl_eventos_home.html"><center><button type="button" class="btn outline-dark">HOME</button></center></a></div>
+				<div class="col-1 menu"><a href="ddl_eventos_planos_e_precos.html"><center><button type="button" class="btn outline-dark">Planos e Preços</button></center></a></div>
+				<div class="col-1 menu"><a href=""><center><button type="button" class="btn outline-dark">Como Funciona</button></center></a></div>
+				<div class="col-2 menu"><a href=""><center><button type="button" class="btn outline-dark">Criar evento</button></center></a></div>
+				<div class="col-2 menu"></div>
+			</div>
+			<br>
+			<br>
+			<div class="bg-gray">
+        <div class="container title">
+            <div class="row justify-content-center">
+                <div class="col-md-12 text-center mb-5">
+                    <h1>Planos e preços</h1>
+                </div>
+                </div>
+            </div>
+        </div>
+								<div class="row text-center">
+                <div class="col-sm-12 col-md-12 text-center">
+                    <span class="priceText"><h3>A partir de</h3> </span><h1><span id="valorFinal" style="color: #348ea9 !important;" class="priceValue">R$ 260<span class="priceSmall">,00 / Mês</span></span></h1>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+
+									<div class="row pb-5">
+                <div class="col-sm-12 col-md-3 text-center">
+                    <h2 class="text-warning"><i class="fa fa-cogs fa-fw fa-2x"></i></h2>
+                    <p>Configuramos o sistema do seu evento e o deixamos pronto para uso</p>
+                </div>
+                <div class="col-sm-12 col-md-3 text-center">
+                    <h2 class="text-success"><i class="fas fa-balance-scale fa-2x"></i></h2>
+                    <p>Melhor custo fixo mensal (Custo x Benefício)</p>
+                </div>
+                <div class="col-sm-12 col-md-3 text-center">
+                    <h2 class="text-primary"><i class="fa fa-calendar fa-fw fa-2x"></i></h2>
+                    <p>Disponibilização do sistema gratutitamente para consultas por 6 meses após o evento</p>
+                </div>
+                <div class="col-sm-12 col-md-3 text-center">
+                    <h2 class="text-info"><i class="fa fa-server fa-fw fa-2x"></i></h2>
+                    <p>Servidores confiáveis e empresa no Brasil com mais de 15 anos no mercado</p>
+                </div>
+            </div>
+						<div class="row text-center">
+                <div class="col-md-12">
+                    <h1 style="color:#FF6600;">Solicitar orçamento</h1>
+                </div>
+            </div>
+<hr>
+<div class="row text-center">
+                <div class="col-md-1"></div>
+	                <div class="col-md-10">
+	                    <form id="envia_email" name="envia_email" action="action.php" method="post" novalidate="novalidate">
+
+	                    <h5 class="alert alert-info text-left">Dados do Solicitante</h5>
+
+	                    <div class="row">
+                            <div class="col">
+                                <input class="form-control" placeholder="Nome *" type="text" name="campo_solicitante" id="campo_solicitante" maxlength="60" required="" aria-required="true">
+                            </div>
+                            <div class="col">
+                                <input class="form-control" placeholder="Email *" type="email" name="campo_solicitante_email" id="campo_solicitante_email" maxlength="60" required="" aria-required="true">
+                            </div>
+                            <div class="col">
+                                <input class="form-control" placeholder="(XX) XXXX-XXXX" type="text" name="campo_solicitante_telefone" id="campo_solicitante_telefone" maxlength="15" input-mask="phone" required="" autocomplete="off" aria-required="true">
+                            </div>
+                        </div>
+                        <br>
+
+                        <h5 class="alert alert-info text-left">Como nos encontrou?</h5>
+
+                       <div class="row">
+                            <div class="col">
+	                            <select class="form-control" id="slt" name="slt" required="" aria-required="true">
+	                                <option value="">Selecione...</option>
+	                                <option value="Google">Google</option>
+	                                <option value="Buscadores">Outros sites de busca</option>
+	                                <option value="Facebook">Facebook</option>
+	                                <option value="Indicação">Indicação</option>
+	                                <option value="Eventos">Eventos</option>
+	                                <option value="Outro">Outro</option>
+	                            </select>
+                           	</div>
+                        </div>
+                        <br>
+
+                        <h5 class="alert alert-info text-left">Dados do Evento</h5>
+
+                        <div class="row">
+                            <div class="col">
+                                <input class="form-control" placeholder="Nome do evento" type="text" name="campo_evento_nome" id="campo_evento_nome" maxlength="100">
+                            </div>
+                        </div>
+                        <br>
+
+                        <div class="row">
+                             <div class="col">
+                                <input class="form-control date" placeholder="Início do evento" type="text" name="campo_evento_ini" id="campo_evento_ini" maxlength="10" autocomplete="off">
+                             </div>
+                              <div class="col">
+                                <input class="form-control date" placeholder="Término do evento" type="text" name="campo_evento_fim" id="campo_evento_fim" maxlength="10" autocomplete="off">
+                            </div>
+                        </div>
+                        <br>
+
+                        <div class="row">
+                            <div class="col">
+                            	<textarea class="form-control" placeholder="Observações" name="campo_evento_observacoes" rows="5" cols="39" id="campo_evento_observacoes" maxlength="500"></textarea>
+                         	</div>
+                     	</div>
+                     	<br>
+
+                     	<input type="submit" value="Enviar solicitação">
+	                    </form>
+	                </div>
+                <div class="col-md-1"></div>
+
+            </div>
+							
+	
+			</div>
+
+			</div>
+</body>
+</html>
